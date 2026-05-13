@@ -14,11 +14,11 @@ const HookForm = () => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input type="phone" onChange={phoneOnChange} defaultValue={phone} placeholder="Phone" />
+                <input type="phone" onChange={phoneOnChange} value={phone} placeholder="Phone" />
                 <br />
-                <input type="email" onChange={emailOnChange} defaultValue={email} placeholder="Email" />
+                <input type="email" onChange={emailOnChange} value={email} placeholder="Email" />
                 <br />
-                <input type="password" onChange={passwordOnChange} defaultValue={password} placeholder="Password" />
+                <input type="password" onChange={passwordOnChange} value={password} placeholder="Password" />
                 <br />
                 <input type="submit" value="Submit" />
             </form>

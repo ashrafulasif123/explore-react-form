@@ -3,11 +3,10 @@ import { useState } from "react";
 const useInputF = (defaultValue) => {
     const [fieldValue, setFieldValue] = useState(defaultValue)
 
-    const handleFieldOnChange = e =>{
-        setFieldValue(e.target.value);
+    const handleOnChange = e =>{
+        setFieldValue(e.target.value)
     }
-
-    return [fieldValue, handleFieldOnChange]
+    return [fieldValue, handleOnChange]
 };
 
 export default useInputF;
