@@ -1,11 +1,21 @@
+import { useState } from "react";
 import ProductForm from "./ProductForm";
 import ProductTable from "./ProductTable";
 
 const ProductManagement = () => {
+
+    const [products, setProducts] = useState([])
+    
+
+    const handleAddProduct = product =>{
+       
+        setProducts([...products, product ])
+    }
+    console.log(products);
     return (
         <div>
-            <ProductForm></ProductForm>
-            <ProductTable></ProductTable>
+            <ProductForm handleAddProduct={handleAddProduct}></ProductForm>
+            <ProductTable products={products}></ProductTable>
         </div>
     );
 };
