@@ -1,19 +1,17 @@
 import { useContext } from "react";
-import { AssetContext } from "./FamilyTree";
+import { AssetContext } from "./FamilyTree"
 
-const Special = ({name, asset}) => {
+
+const Special = ({ name, asset }) => {
 
     const newAsset = useContext(AssetContext)
-
-    console.log('new asset', newAsset)
+    console.log(newAsset)
 
     return (
         <div>
             <h3>Special: {name}</h3>
-            <p>Asset: {asset}</p>
-            {
-                name === "Florine" && <p>New Asset: {newAsset}</p>
-            }
+            <p>Asset:  {asset}</p>
+            <p>New Asset: {newAsset}</p>
         </div>
     );
 };

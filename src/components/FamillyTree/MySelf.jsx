@@ -4,7 +4,7 @@ const MySelf = ({asset}) => {
     return (
         <div>
             <h3>MySelf</h3>
-            <Special name="Florine" asset={asset}></Special>
+            <Special asset={asset}></Special>
         </div>
     );
 };

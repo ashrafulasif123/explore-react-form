@@ -2,7 +2,7 @@ import Brother from "./Brother";
 import MySelf from "./MySelf";
 import Sister from "./Sister";
 
-const Dad = ({asset}) => {
+const Dad = ({ asset }) => {
     return (
         <div>
             <h3>Dad</h3>
